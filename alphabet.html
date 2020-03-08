@@ -1,0 +1,2117 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>英语音标发音表</title>
+    <style type="text/css">
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-size: .16rem;
+        }
+
+        table {
+            table-layout: fixed;
+            width: 100%;
+        }
+
+        h3 {
+            text-align: center;
+            margin: .2rem 0;
+        }
+
+        #container {
+            padding: 1em 2em;
+        }
+
+        .tooltip-word {
+            border-radius: .1rem;
+            font-size: 1rem;
+            color: rgb(255, 255, 255);
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: .2rem;
+            margin: 0 0 0 -0.8rem;
+            position: fixed;
+            top: 30%;
+            left: 50%;
+            min-width: 1.6rem;
+            text-align: center;
+        }
+
+        .tooltip-word p {
+            margin: .1rem 0;
+        }
+
+        .tooltip-word p span {
+            color: #666;
+        }
+
+        .tooltip-word p i {
+            font-style: normal;
+            color: chocolate;
+        }
+
+        table.tftable,
+        table.basic {
+            font-size: .14rem;
+            color: #333333;
+            width: 100%;
+            border-width: 2px;
+            border-color: #729ea5;
+            border-collapse: collapse;
+        }
+
+        table.tftable th {
+            font-size: .16rem;
+            background-color: #acc8cc;
+            border-width: 1px;
+            padding: .08rem;
+            border-style: solid;
+            border-color: #729ea5;
+            text-align: center;
+        }
+
+        table.tftable tr {
+            background-color: #d4e3e5;
+        }
+
+        table.tftable td,
+        table.basic td {
+            border: 1px solid #729ea5;
+            text-align: center;
+            padding: .08rem;
+            font-size: .2rem;
+        }
+
+        table.tftable td[rowspan] {
+            font-size: .26rem;
+            font-weight: bold;
+            font-family: "Serif, Georgia, Times New Roman", ;
+        }
+
+        table td.word span {
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        table td.word span i {
+            font-style: normal;
+            pointer-events: none;
+        }
+
+        table td.word span:hover {
+            color: blue;
+        }
+
+        table td.word span:hover i {
+            color: red;
+        }
+
+        table td.pron {
+            cursor: pointer;
+            color: blue;
+        }
+
+        table td.pron:hover {
+            color: goldenrod
+        }
+
+        table.tftable td.word,
+        table.tftable tr td:nth-child(3),
+        table.tftable tr td:last-child {
+            text-align: left;
+        }
+
+        table td.word span {
+            padding: 0 .08rem;
+        }
+
+        table.basic td {
+            border: 1px solid lightskyblue;
+            background-color: lightyellow;
+            text-align: center;
+        }
+
+        table.basic th {
+            border: 1px solid steelblue;
+            background-color: lightskyblue;
+            text-align: center;
+            font-weight: normal;
+        }
+    </style>
+    <script>
+        //适配
+        // (function () {
+        //     document.addEventListener('DOMContentLoaded', function () {
+        //         var deviceWidth = document.documentElement.clientWidth;
+        //         document.documentElement.style.fontSize = deviceWidth / 6.4 + 'px';
+        //     }, false);
+        //     window.onresize = function(){
+        //         var deviceWidth = document.documentElement.clientWidth;
+        //         document.documentElement.style.fontSize = deviceWidth / 6.4 + 'px';
+        //     };
+        // })();
+        /* eslint-disable */
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    // 这里在375的设备上1rem = 16px，在其他屏幕宽的时候会自动根据这个比例来动态调整
+                    docEl.style.fontSize = 100 * (clientWidth / 1903) + 'px';
+                };
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+
+    </script>
+</head>
+
+<body>
+    <div id="container">
+        <div>
+            <div>
+                <h3>
+                    48个音标
+                </h3>
+            </div>
+            <!-- <div style="text-align: center;">
+                <img src="pron/all.jpg" alt="48个音标">
+            </div> -->
+            <table width="100%" cellpadding="4" cellspacing="1" class="basic">
+                <tbody>
+                    <tr>
+                        <th width="12%" rowspan="5" style="font-weight: bold;">元音<br />(20)</th>
+                        <th width="12%" rowspan="3">单元音</th>
+                        <th width="14%">前元音</th>
+                        <td class="pron"><span data-audio="02">/iː/</span></td>
+                        <td class="pron"><span data-audio="01">/ɪ/</span></td>
+                        <td class="pron"><span data-audio="03">/e/</span></td>
+                        <td class="pron"><span data-audio="04">/æ/</span></td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <th>中元音</th>
+                        <td class="pron"><span data-audio="08">/ɜː/</span></td>
+                        <td class="pron"><span data-audio="07">/ə/</span></td>
+                        <td class="pron"><span data-audio="05">/ʌ/</span></td>
+                        <td>&nbsp;</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>后元音</th>
+                        <td class="pron"><span data-audio="12">/uː/</span></td>
+                        <td class="pron"><span data-audio="11">/ʊ/</span></td>
+                        <td class="pron"><span data-audio="10">/ɔː/</span></td>
+                        <td class="pron"><span data-audio="09">/ɒ/</span></td>
+                        <td class="pron"><span data-audio="06">/ɑː/</span></td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2">双元音</th>
+                        <th>开合音</th>
+                        <td class="pron"><span data-audio="13">/eɪ/</span></td>
+                        <td class="pron"><span data-audio="14">/aɪ/</span></td>
+                        <td class="pron"><span data-audio="15">/ɔɪ/</span></td>
+                        <td class="pron"><span data-audio="18">/aʊ/</span></td>
+                        <td class="pron"><span data-audio="17">/əʊ/</span></td>
+                    </tr>
+                    <tr>
+                        <th>集中音</th>
+                        <td class="pron"><span data-audio="16">/ɪə/</span></td>
+                        <td class="pron"><span data-audio="19">/eə/</span></td>
+                        <td class="pron"><span data-audio="20">/ʊə/</span></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="9" style="font-weight: bold;">辅音<br />(28)</th>
+                        <th rowspan="2">爆破音</th>
+                        <th>清辅音</th>
+                        <td class="pron"><span data-audio="21">/p/</span></td>
+                        <td class="pron"><span data-audio="23">/t/</span></td>
+                        <td class="pron"><span data-audio="25">/k/</span></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <th>浊辅音</th>
+                        <td class="pron"><span data-audio="22">/b/</span></td>
+                        <td class="pron"><span data-audio="24">/d/</span></td>
+                        <td class="pron"><span data-audio="26">/ɡ/</span></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2">摩擦音</th>
+                        <th>清辅音</th>
+                        <td class="pron"><span data-audio="35">/f/</span></td>
+                        <td class="pron"><span data-audio="27">/s/</span></td>
+                        <td class="pron"><span data-audio="40">/ʃ/</span></td>
+                        <td class="pron"><span data-audio="33">/θ/</span></td>
+                        <td class="pron"><span data-audio="38">/h/</span></td>
+                    </tr>
+                    <tr>
+                        <th>浊辅音</th>
+                        <td class="pron"><span data-audio="36">/v/</span></td>
+                        <td class="pron"><span data-audio="28">/z/</span></td>
+                        <td class="pron"><span data-audio="32">/ʒ/</span></td>
+                        <td class="pron"><span data-audio="34">/ð/</span></td>
+                        <td class="pron"><span data-audio="31">/r/</span></td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2">破擦音</th>
+                        <th>清辅音</th>
+                        <td class="pron"><span data-audio="43">/tʃ/</span></td>
+                        <td class="pron"><span data-audio="45">/tr/</span></td>
+                        <td class="pron"><span data-audio="47">/ts/</span></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <th>浊辅音</th>
+                        <td class="pron"><span data-audio="44">/dʒ/</span></td>
+                        <td class="pron"><span data-audio="46">/dr/</span></td>
+                        <td class="pron"><span data-audio="48">/dz/</span></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <th>鼻音</th>
+                        <th>浊辅音</th>
+                        <td class="pron"><span data-audio="29">/m/</span></td>
+                        <td class="pron"><span data-audio="30">/n/</span></td>
+                        <td class="pron"><span data-audio="41">/ŋ/</span></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <th>舌则音</th>
+                        <th>浊辅音</th>
+                        <td class="pron"><span data-audio="42">/l/</span></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <th>半元音</th>
+                        <th>浊辅音</th>
+                        <td class="pron"><span data-audio="39">/j/</span></td>
+                        <td class="pron"><span data-audio="37">/w/</span></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <h3>26个字母在单词中的发音</h3>
+        </div>
+        <table id="tfhover" class="tftable">
+            <colgroup>
+                <col width="auto">
+                <col width="auto">
+                <col width="70%">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>字母</th>
+                    <th>音标</th>
+                    <th>单词</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="8">
+                        <p><span>A <span>a</span></span></p>
+                    </td>
+                    <td class="pron">
+                        <p><span data-audio="13">/eɪ/</span></p>
+                    </td>
+                    <td class="word">
+                        <p><span>n<i>a</i>me</span> <span>pl<i>a</i>ne</span> <span>J<i>a</i>ne</span> <span>b<i>a</i>by</span> <span>c<i>a</i>ke</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pron">
+                        <p><span data-audio="04">/æ/</span></p>
+                    </td>
+                    <td class="word">
+                        <p><span>b<i>a</i>g</span> <span>d<i>a</i>d</span> <span>h<i>a</i>t</span> <span>m<i>a</i>p</span> <span>bl<i>a</i>ck</span> <span>b<i>a</i>ck</span> 
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pron">
+                        <p><span data-audio="06">/ɑː/</span></p>
+                    </td>
+                    <td class="word">
+                        <p><span><i>a</i>fter</span> <span>pl<i>a</i>nt</span><span><i>a</i>sk</span> <span>gr<i>a</i>sp</span> <span>gl<i>a</i>ss</span> <span>f<i>a</i>st</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pron">
+                        <p><span data-audio="10">/ɔ:/</span></p>
+                    </td>
+                    <td class="word">
+                        <p><span>w<i>a</i>ter</span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pron">
+                        <p><span data-audio="09">/ɒ/</span></p>
+                    </td>
+                    <td class="word">
+                        <p><span>w<i>a</i>nt</span> <span>wh<i>a</i>t</span> <span>w<i>a</i>tch</span> <span>w<i>a</i>sh</span> <span>qu<i>a</i>lity</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pron">
+                        <p><span data-audio="03">/e/</span></p>
+                    </td>
+                    <td class="word">
+                        <p><span><i>a</i>ny</span> <span>m<i>a</i>ny</span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pron">
+                        <p><span data-audio="01">/ɪ/</span></p>
+                    </td>
+                    <td class="word">
+                        <p><span>or<i>a</i>nge</span><span>vill<i>a</i>ge</span> <span>cabb<i>a</i>ge</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pron">
+                        <p><span data-audio="07">/ə/</span></p>
+                    </td>
+                    <td class="word">
+                        <p><span>Chin<i>a</i></span> <span><i>a</i>nother</span> <span>wom<i>a</i>n</span> <span>breakf<i>a</i>st</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="2">
+                        <p><span>B <span>b</span></span></p>
+                    </td>
+                    <td class="pron">
+                        <p><span data-audio="22">/b/</span></p>
+                    </td>
+                    <td class="word">
+                        <p><span><i>b</i>ike</span> <span><i>b</i>us</span> <span data-region='b'><i>b</i>ag</span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pron">
+                        <p><span>/-/</span></p>
+                    </td>
+                    <td class="word">
+                        <p><span>bom<i>b</i></span> <span>tom<i>b</i></span> <span>lam<i>b</i></span>
+                            <span>clim<i>b</i></span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="3">
+                        <p><span>C <span>c</span></span></p>
+                    </td>
+                    <td class="pron">
+                        <p><span data-audio="25">/k/</span></p>
+                    </td>
+                    <td class="word">
+                        <p><span data-region="c"><i>c</i>ake</span><span>pi<i>c</i>ture</span><span><i>c</i>oat</span><span>musi<i>c</i></span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pron">
+                        <p><span data-audio="27">/s/</span></p>
+                    </td>
+                    <td class="word">
+                        <p><span>fa<i>c</i>e</span><span>de<i>c</i>ide</span><span><i>c</i>inema</span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pron">
+                        <p><span data-audio="40">/ʃ/</span></p>
+                    </td>
+                    <td class="word">
+                        <p><span>deli<i>c</i>ious</span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="2">
+                        <p><span>D <span>d</span></span></p>
+                    </td>
+                    <td class="pron">
+                        <p><span data-audio="24">/d/</span></p>
+                    </td>
+                    <td class="word">
+                        <p><span><i>d</i>octor</span><span>brea<i>d</i></span><span>har<i>d</i></span><span><i>d</i>ay</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pron">
+                        <p><span>/-/</span></p>
+                    </td>
+                    <td class="word">
+                        <p><span>gran<i>d</i>pa</span><span>gran<i>d</i>ma</span><span>san<i>d</i>wich</span><span>han<i>d</i>some</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="4">
+                        <p><span>E <span>e</span></span></p>
+                    </td>
+                    <td class="pron">
+                        <p><span data-audio="02">/i:/</span></p>
+                    </td>
+                    <td class="word">
+                        <p><span>h<i>e</i></span> <span>th<i>e</i>se</span>
+                            <span>chin<i>e</i>se</span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pron">
+                        <p><span data-audio="03">/e/</span></p>
+                    </td>
+                    <td class="word">
+                        <p><span>b<i>e</i>d</span><span>l<i>e</i>t</span><span>p<i>e</i>n</span><span>d<i>e</i>sk</span><span>y<i>e</i>s</span><span><i>e</i>gg</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pron">
+                        <p><span data-audio="01">/ɪ/</span></p>
+                    </td>
+                    <td class="word">
+                        <p><span>chick<i>e</i>n</span> <span>b<i>e</i>gin</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pron">
+                        <p><span data-audio="07">/ə/</span></p>
+                    </td>
+                    <td class="word">
+                        <p><span>hundr<i>e</i>d</span><span>op<i>e</i>n</span><span>childr<i>e</i>n</span></p>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="1">
+                        <p><span>F <span>f</span></span></p>
+                    </td>
+                    <td class="pron">
+                        <p><span data-audio="35">/f/</span></p>
+                    </td>
+                    <td class="word">
+                        <p><span><i>f</i>ive</span><span data-region="f">break<i>f</i>ast</span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="2">
+                        <p><span>G <span>g</span></span></p>
+                    </td>
+                    <td class="pron">
+                        <p><span data-audio="26">/g/</span></p>
+                    </td>
+                    <td class="word">
+                        <p><span data-region="g">ba<i>g</i></span><span><i>g</i>arden</span><span><i>g</i>o</span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pron">
+                        <p><span data-audio="44">/dʒ/</span></p>
+                    </td>
+                    <td class="word">
+                        <p><span data-region="g">oran<i>g</i>e</span><span><i>G</i>erman</span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="2">
+                        <p><span>H <span>h</span></span></p>
+                    </td>
+                    <td class="pron">
+                        <p><span data-audio="38">/h/</span></p>
+                    </td>
+                    <td class="word">
+                        <p><span><i>h</i>ot</span><span><i>h</i>ead</span><span><i>h</i>ouse</span><span><i>h</i>and</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pron">
+                        <p><span>/-/</span></p>
+                    </td>
+                    <td class="word">
+                        <p><span><i>h</i>our</span><span><i>h</i>onor</span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="3">
+                        <p><span>I i</span></p>
+                    </td>
+                    <td class="pron">
+                        <p><span data-audio="14">/aɪ/</span></p>
+                    </td>
+                    <td class="word">
+                        <p><span data-region="i">b<i>i</i>ke</span><span>r<i>i</i>ce</span><span>k<i>i</i>te</span><span>n<i>i</i>ce</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pron">
+                        <p><span data-audio="01">/ɪ/</span></p>
+                    </td>
+                    <td class="word">
+                        <p><span>f<i>i</i>sh</span><span>b<i>i</i>g</span>
+                            <span>dr<i>i</i>nk</span><span>s<i>i</i>t</span><span>m<i>i</i>lk</span><span>sw<i>i</i>m</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pron">
+                        <p><span data-audio="07">/ə/</span></p>
+                    </td>
+                    <td class="word">
+                        <p><span>hol<i>i</i>day</span><span>fam<i>i</i>ly</span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="1">
+                        <p><span>J <span>j</span></span></p>
+                    </td>
+                    <td class="pron">
+                        <p><span data-audio="44">/dʒ/</span></p>
+                    </td>
+                    <td class="word">
+                        <p><span><i>j</i>eep</span> <span><i>j</i>ar</span> <span><i>j</i>oke</span>
+                            <span><i>j</i>oin</span><span><i>J</i>uly</span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="1">
+                        <p><span>K <span>k</span></span></p>
+                    </td>
+                    <td class="pron">
+                        <p><span data-audio="25">/k/</span></p>
+                    </td>
+                    <td class="word">
+                        <p><span><i>k</i>ind</span><span>s<i>k</i>ate</span><span>ma<i>k</i>e</span><span>wee<i>k</i></span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="2">
+                        <p><span>L <span>l</span></span></p>
+                    </td>
+                    <td class="pron">
+                        <p><span data-audio="42">/l/</span></p>
+                    </td>
+                    <td class="word">
+                        <p><span><i>l</i>ike</span><span><i>l</i>ake</span><span><i>l</i>ong</span><span><i>l</i>ose</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pron">
+                        <p><span data-audio="42">/l/</span></p>
+                    </td>
+                    <td class="word">
+                        <p><span data-region="l">mi<i>l</i>k</span><span>schoo<i>l</i></span> <span>ta<i>l</i>l</span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="1">
+                        <p><span>M <span>m</span></span></p>
+                    </td>
+                    <td class="pron">
+                        <p><span data-audio="29">/m/</span></p>
+                    </td>
+                    <td class="word">
+                        <p><span><i>m</i>onkey</span><span>to<i>m</i>ato</span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="3">
+                        <p><span>N <span>n</span></span></p>
+                    </td>
+                    <td class="pron">
+                        <p><span data-audio="30">/n/</span></p>
+                    </td>
+                    <td class="word">
+                        <p><span><i>n</i>ot</span><span><i>n</i>ote</span><span data-region="n"><i>n</i>ame</span><span><i>n</i>o</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pron">
+                        <p><span data-audio="30">/n/</span></p>
+                    </td>
+                    <td class="word">
+                        <p><span>shi<i>n</i>e</span><span>te<i>n</i></span><span>so<i>n</i></span><span>moo<i>n</i></span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pron">
+                        <p><span data-audio="41">/ŋ/</span></p>
+                    </td>
+                    <td class="word">
+                        <p><span>u<i>n</i>cle</span><span>tha<i>n</i>k</span><span>hu<i>n</i>gry</span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="4">
+                        <p><span>O <span>o</span></span></p>
+                    </td>
+                    <td class="pron">
+                        <p><span data-audio="17">/əʊ/</span></p>
+                    </td>
+                    <td class="word">
+                        <p><span>th<i>o</i>se</span><span>cl<i>o</i>se</span><span data-region="o">g<i>o</i></span><span>h<i>o</i>me</span><span data-region="o">n<i>o</i></span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pron">
+                        <p><span data-audio="09">/ɒ/</span></p>
+                    </td>
+                    <td class="word">
+                        <p><span>cl<i>o</i>ck</span><span data-region="o">n<i>o</i>t</span><span>b<i>o</i>x</span><span>sh<i>o</i>p</span><span>s<i>o</i>ck</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pron">
+                        <p><span data-audio="05">/ʌ/</span></p>
+                    </td>
+                    <td class="word">
+                        <p><span>c<i>o</i>me</span><span>m<i>o</i>ney</span><span>l<i>o</i>ve</span><span>m<i>o</i>ther</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pron">
+                        <p><span data-audio="07">/ə/</span></p>
+                    </td>
+                    <td class="word">
+                        <p><span>sec<i>o</i>nd</span><span>t<i>o</i>night</span><span>someb<i>o</i>dy</span><span>welc<i>o</i>me</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="1">
+                        <p><span>P <span>p</span></span></p>
+                    </td>
+                    <td class="pron">
+                        <p><span data-audio="21">/p/</span></p>
+                    </td>
+                    <td class="word">
+                        <p><span><i>p</i>a<i>p</i>er</span><span data-region="p"><i>p</i>lane</span><span><i>p</i>ig</span><span>shi<i>p</i></span><span data-region="p"><i>p</i>en</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="1">
+                        <p><span>Q <span>q</span></span></p>
+                    </td>
+                    <td class="pron">
+                        <p><span data-audio="25">/k/</span></p>
+                    </td>
+                    <td class="word">
+                        <p><span><i>q</i>uick</span><span><i>q</i>uite</span><span><i>q</i>uarter</span><span data-region="q"><i>q</i>uality</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="1">
+                        <p><span>R <span>r</span></span></p>
+                    </td>
+                    <td class="pron">
+                        <p><span data-audio="31">/r/</span></p>
+                    </td>
+                    <td class="word">
+                        <p><span><i>r</i>ed</span><span><i>r</i>ubber</span><span><i>r</i>uler</span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="4">
+                        <p><span>S s</span></p>
+                    </td>
+                    <td class="pron">
+                        <p><span data-audio="27">/s/</span></p>
+                    </td>
+                    <td class="word">
+                        <p><span data-region="s"><i>s</i>it</span><span><i>s</i>leep</span><span data-region="s">de<i>s</i>k</span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pron">
+                        <p><span data-audio="28">/z/</span></p>
+                    </td>
+                    <td class="word">
+                        <p><span data-region="s">mu<i>s</i>ic</span><span>hu<i>s</i>band</span><span>ro<i>s</i>e</span><span data-region="s">lo<i>s</i>e</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pron">
+                        <p><span data-audio="40">/ʃ/</span></p>
+                    </td>
+                    <td class="word">
+                        <p><span><i>s</i>ure</span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pron">
+                        <p><span data-audio="32">/ʒ/</span></p>
+                    </td>
+                    <td class="word">
+                        <p><span>u<i>s</i>ually</span><span>plea<i>s</i>ure</span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="3">
+                        <p><span>T <span>t</span></span></p>
+                    </td>
+                    <td class="pron">
+                        <p><span data-audio="23">/t/</span></p>
+                    </td>
+                    <td class="word">
+                        <p><span data-region="t"><i>t</i>en</span><span>la<i>t</i>e</span><span>mee<i>t</i></span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pron">
+                        <p><span data-audio="40">/ʃ/</span></p>
+                    </td>
+                    <td class="word">
+                        <p><span>pa<i>t</i>ient</span><span>na<i>t</i>ion</span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pron">
+                        <p><span data-audio="43">/tʃ/</span></p>
+                    </td>
+                    <td class="word">
+                        <p><span>ques<i>t</i>ion</span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="5">
+                        <p><span>U <span>u</span></span></p>
+                    </td>
+                    <td class="pron">
+                        <p><span data-audio="ju">/jʊ/</span></p>
+                    </td>
+                    <td class="word">
+                        <p><span>st<i>u</i>dent</span><span>exc<i>u</i>se</span><span>d<i>u</i>ty</span><span>T<i>u</i>esday</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pron">
+                        <p><span data-audio="12">/u:/</span></p>
+                    </td>
+                    <td class="word">
+                        <p><span>bl<i>u</i>e</span><span data-region="u">r<i>u</i>ler</span><span>J<i>u</i>ne</span><span>infl<i>u</i>ence</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pron">
+                        <p><span data-audio="05">/ʌ/</span></p>
+                    </td>
+                    <td class="word">
+                        <p><span data-region="u">b<i>u</i>s</span><span>c<i>u</i>p</span><span>j<i>u</i>mp</span><span>m<i>u</i>ch</span><span>l<i>u</i>nch</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pron">
+                        <p><span data-audio="01">/ɪ/</span></p>
+                    </td>
+                    <td class="word">
+                        <p><span>b<i>u</i>sy</span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pron">
+                        <p><span data-audio="07">/ə/</span></p>
+                    </td>
+                    <td class="word">
+                        <p><span>aut<i>u</i>mn</span><span>diffic<i>u</i>lt</span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="1">
+                        <p><span>V <span>v</span></span></p>
+                    </td>
+                    <td class="pron">
+                        <p><span data-audio="36">/v/</span></p>
+                    </td>
+                    <td class="word">
+                        <p><span><i>v</i>ery</span><span><i>v</i>oice</span><span data-region="v">lo<i>v</i>e</span><span>lea<i>v</i>e</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="1">
+                        <p><span>W <span>w</span></span></p>
+                    </td>
+                    <td class="pron">
+                        <p><span data-audio="37">/w/</span></p>
+                    </td>
+                    <td class="word">
+                        <p><span data-region="w"><i>w</i>eek</span><span><i>w</i>in</span><span><i>w</i>ake</span><span>s<i>w</i>eet</span><span><i>w</i>ait</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="2">
+                        <p><span>X <span>x</span></span></p>
+                    </td>
+                    <td class="pron">
+                        <p><span data-audio="ks">/ks/</span></p>
+                    </td>
+                    <td class="word">
+                        <p><span data-region="x">bo<i>x</i></span><span>te<i>x</i>t</span><span>e<i>x</i>ercise</span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pron">
+                        <p><span data-audio="gz">/gz/</span></p>
+                    </td>
+                    <td class="word">
+                        <p><span>e<i>x</i>ample</span><span>e<i>x</i>ist</span><span>e<i>x</i>act</span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="3">
+                        <p><span>Y</span><span>y</span></p>
+                    </td>
+                    <td class="pron">
+                        <p><span data-audio="14">/aɪ/</span></p>
+                    </td>
+                    <td class="word">
+                        <p><span>m<i>y</i></span><span>fl<i>y</i></span><span>tr<i>y</i></span><span>cr<i>y</i></span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pron">
+                        <p><span data-audio="01">/ɪ/</span></p>
+                    </td>
+                    <td class="word">
+                        <p><span>cit<i>y</i></span><span data-region="y">famil<i>y</i></span><span>slowl<i>y</i></span><span>prett<i>y</i></span><span>pit<i>y</i></span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pron">
+                        <p><span data-audio="39">/j/</span></p>
+                    </td>
+                    <td class="word">
+                        <p><span data-region="y"><i>y</i>es</span><span><i>y</i>ard</span><span><i>y</i>ellow</span><span><i>y</i>oung</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="1">
+                        <p><span>Z z</span></p>
+                    </td>
+                    <td class="pron">
+                        <p><span data-audio="28">/z/</span></p>
+                    </td>
+                    <td class="word">
+                        <p><span>pu<i>z</i>zle</span><span><i>z</i>ero</span><span><i>z</i>oo</span></p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div>
+            <h3>常见字母组合的发音</h3>
+            <table id="tfhover" class="tftable">
+                <colgroup>
+                    <col width="auto">
+                    <col width="auto">
+                    <col width="70%">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>字母组合</th>
+                        <th>音标</th>
+                        <th>单词</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <p><span><span>ar</span></span></p>
+                        </td>
+                        <td>
+                            <p><span>[ɑː]</span></p>
+                        </td>
+                        <td>
+                            <p><span>car farm dark sharpener</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span>&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p><span>[ɔ:]</span></p>
+                        </td>
+                        <td>
+                            <p><span>warm quarter towards</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span><span>er</span></span></p>
+                        </td>
+                        <td>
+                            <p><span>[ɜː]</span></p>
+                        </td>
+                        <td>
+                            <p><span>her term perfect</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span>&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p><span>[ə]</span></p>
+                        </td>
+                        <td>
+                            <p><span>father mother number</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span><span>ir</span></span></p>
+                        </td>
+                        <td>
+                            <p><span>[</span><span>ɜ</span><span>ː</span><span>]</span></p>
+                        </td>
+                        <td>
+                            <p><span>bird shirt first</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span>or</span></p>
+                        </td>
+                        <td>
+                            <p><span>[</span><span>ɔ</span><span>:]</span></p>
+                        </td>
+                        <td>
+                            <p><span>short forty morning</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span>&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p><span>[</span><span>ɜ</span><span>ː</span><span>]</span></p>
+                        </td>
+                        <td>
+                            <p><span>word worker worse</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span><span>ur</span></span></p>
+                        </td>
+                        <td>
+                            <p><span>[</span><span>ɜ</span><span>ː</span><span>]</span></p>
+                        </td>
+                        <td>
+                            <p><span>turn further purple Thursday</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span>are</span></p>
+                        </td>
+                        <td>
+                            <p><span>[e</span><span>ə</span><span>]</span></p>
+                        </td>
+                        <td>
+                            <p><span>care dare hare</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span>&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p><span>[a</span><span>ː</span><span>]</span></p>
+                        </td>
+                        <td>
+                            <p><span>are</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span>ere</span></p>
+                        </td>
+                        <td>
+                            <p><span>[</span><span>ɪə</span><span>]</span></p>
+                        </td>
+                        <td>
+                            <p><span>here mere</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span>&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p><span>[e</span><span>ə<span>]</span></span></p>
+                        </td>
+                        <td>
+                            <p><span>there</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span>ire</span></p>
+                        </td>
+                        <td>
+                            <p><span>[a</span><span>ɪə</span><span>]</span></p>
+                        </td>
+                        <td>
+                            <p><span>fire hire wire tire</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span>ore</span></p>
+                        </td>
+                        <td>
+                            <p><span>[</span><span>ɔ</span><span>:]</span></p>
+                        </td>
+                        <td>
+                            <p><span>more score before store chore</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span><span>ure</span></span></p>
+                        </td>
+                        <td>
+                            <p><span>[</span><span><span>jʊə</span></span><span>]</span></p>
+                        </td>
+                        <td>
+                            <p><span>pure cure</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span>&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p><span>[</span><span>ʊə</span><span>]</span></p>
+                        </td>
+                        <td>
+                            <p><span>sure</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span>&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p><span>[</span><span>ə</span><span>]</span></p>
+                        </td>
+                        <td>
+                            <p><span>picture pleasure</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span>ai</span></p>
+                        </td>
+                        <td>
+                            <p><span>[e</span><span>ɪ</span><span>]</span></p>
+                        </td>
+                        <td>
+                            <p><span>afraid rain <span>wait</span></span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span>ay</span></p>
+                        </td>
+                        <td>
+                            <p><span>[e</span><span>ɪ</span><span>]</span></p>
+                        </td>
+                        <td>
+                            <p><span>day play <span>Monday &nbsp;Tuesday</span>
+                                    Wednesday Thursday</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span>air</span></p>
+                        </td>
+                        <td>
+                            <p><span>[e</span><span>ə</span><span>]</span></p>
+                        </td>
+                        <td>
+                            <p><span>air hair chair pair repair</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span>al</span></p>
+                        </td>
+                        <td>
+                            <p><span>[</span><span>ɔ</span><span>:]</span></p>
+                        </td>
+                        <td>
+                            <p><span>small ball talk wall all</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span>&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p><span>[</span><span>ɔ</span><span>:l]</span></p>
+                        </td>
+                        <td>
+                            <p><span>always also salt almost</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span>&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p><span>[a</span><span>ː</span><span>]</span></p>
+                        </td>
+                        <td>
+                            <p><span>half calm</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span>au / aw</span></p>
+                        </td>
+                        <td>
+                            <p><span>[</span><span>ɔ</span><span>:]</span></p>
+                        </td>
+                        <td>
+                            <p><span>autumn daughter draw claw</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span><span>ea</span></span></p>
+                        </td>
+                        <td>
+                            <p><span>[<span>i</span>:]</span></p>
+                        </td>
+                        <td>
+                            <p><span>teach easy cheap please</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span>&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p><span>[e]</span></p>
+                        </td>
+                        <td>
+                            <p><span>heavy bread sweater weather</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span>&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p><span>[e</span><span>ɪ</span><span>]</span></p>
+                        </td>
+                        <td>
+                            <p><span>break great</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span>&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p><span>[</span><span>ɪə</span><span>]</span></p>
+                        </td>
+                        <td>
+                            <p><span>idea theatre</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span>ear</span></p>
+                        </td>
+                        <td>
+                            <p><span>[</span><span>ɪə</span><span>]</span></p>
+                        </td>
+                        <td>
+                            <p><span>hear dear near clear year</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span>&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p><span>[e</span><span>ə</span><span>]</span></p>
+                        </td>
+                        <td>
+                            <p><span>bear pear wear <span>swear</span></span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span>&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p><span>[</span><span>ɜ</span><span>ː</span><span>]</span></p>
+                        </td>
+                        <td>
+                            <p><span>earth learn early</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span><span>ee</span></span></p>
+                        </td>
+                        <td>
+                            <p><span>[<span>i</span>:]</span></p>
+                        </td>
+                        <td>
+                            <p><span>jeep week green three meet</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span><span>eer</span></span></p>
+                        </td>
+                        <td>
+                            <p><span>[</span><span>ɪə</span><span>]</span></p>
+                        </td>
+                        <td>
+                            <p><span>pioneer deer beer</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span><span>ei</span></span><span> / <span>ey</span></span></p>
+                        </td>
+                        <td>
+                            <p><span>[e</span><span>ɪ</span><span>]</span></p>
+                        </td>
+                        <td>
+                            <p><span>eight neighbor they</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span><span>ei</span></span><span> / <span>ey</span></span></p>
+                        </td>
+                        <td>
+                            <p><span>[<span>i</span>:]</span></p>
+                        </td>
+                        <td>
+                            <p><span>receive key</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span><span>ew</span></span></p>
+                        </td>
+                        <td>
+                            <p><span>[<span>ju</span>:]</span></p>
+                        </td>
+                        <td>
+                            <p><span>new few</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span><span>ew</span></span></p>
+                        </td>
+                        <td>
+                            <p><span>[u:]</span></p>
+                        </td>
+                        <td>
+                            <p><span>flew brew jewelry</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span><span>eu</span></span></p>
+                        </td>
+                        <td>
+                            <p><span>[<span>ju</span>:]</span></p>
+                        </td>
+                        <td>
+                            <p><span>neutral</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span><span>ie</span></span><span> / <span>ei</span></span></p>
+                        </td>
+                        <td>
+                            <p><span>[<span>i</span>:]</span></p>
+                        </td>
+                        <td>
+                            <p><span>piece field receive seize</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span><span>oa</span></span></p>
+                        </td>
+                        <td>
+                            <p><span>[</span><span>əʊ</span><span>]</span></p>
+                        </td>
+                        <td>
+                            <p><span>coat Joan boat goal</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span>oar/<span>oor</span></span></p>
+                        </td>
+                        <td>
+                            <p><span>[</span><span>ɔ</span><span>:]</span></p>
+                        </td>
+                        <td>
+                            <p><span>roar board door floor</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span>oi/oy</span></p>
+                        </td>
+                        <td>
+                            <p><span>[</span><span>ɔɪ</span><span>]</span></p>
+                        </td>
+                        <td>
+                            <p><span>noise point boy toilet</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span><span>oo</span></span></p>
+                        </td>
+                        <td>
+                            <p><span>[u:]</span></p>
+                        </td>
+                        <td>
+                            <p><span>room food tooth school</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span>&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p><span>[</span><span>ʊ</span><span>]</span></p>
+                        </td>
+                        <td>
+                            <p><span>book look cook foot good</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span>
+                                    <o:p>&nbsp;</o:p>
+                                </span></p>
+                        </td>
+                        <td>
+                            <p><span>[</span><span>ʌ</span><span>]</span></p>
+                        </td>
+                        <td>
+                            <p><span>blood</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span><span>ou</span></span><span> / ow</span></p>
+                        </td>
+                        <td>
+                            <p><span>[a</span><span>ʊ</span><span>]</span></p>
+                        </td>
+                        <td>
+                            <p><span>house count flower down</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span>&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p><span>[</span><span>əʊ</span><span>]</span></p>
+                        </td>
+                        <td>
+                            <p><span>though know row grow throw</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span>&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p><span>[</span><span>ʌ</span><span>]</span></p>
+                        </td>
+                        <td>
+                            <p><span>young country enough</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span>&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p><span>[u:]</span></p>
+                        </td>
+                        <td>
+                            <p><span>group you soup through</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span>&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p><span>[</span><span>ɔ</span><span>:]</span></p>
+                        </td>
+                        <td>
+                            <p><span>thought bought brought</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span>our</span></p>
+                        </td>
+                        <td>
+                            <p><span>[</span><span>ɔ</span><span>:]</span></p>
+                        </td>
+                        <td>
+                            <p><span>course your four</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span>&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p><span>[a</span><span>ʊə</span><span>]</span></p>
+                        </td>
+                        <td>
+                            <p><span>our hour ours</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span>&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p><span>[</span><span>ɜ</span><span>ː</span><span>]</span></p>
+                        </td>
+                        <td>
+                            <p><span>journey</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span><span>ui</span></span></p>
+                        </td>
+                        <td>
+                            <p><span>[<span>ju</span>:</span><span>ɪ</span><span>]</span></p>
+                        </td>
+                        <td>
+                            <p><span>annuity continuity</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span>&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p><span>[u:]</span></p>
+                        </td>
+                        <td>
+                            <p><span>juice sluice fruit suit</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span>-<span>tion</span></span></p>
+                        </td>
+                        <td>
+                            <p><span>[</span><span>ʃ<span>n</span></span><span>]</span></p>
+                        </td>
+                        <td>
+                            <p><span>nation dictionary</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span>&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p><span>[t</span><span>ʃə<span>n</span></span><span>]</span></p>
+                        </td>
+                        <td>
+                            <p><span>question suggestion</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span>-<span>sion</span></span></p>
+                        </td>
+                        <td>
+                            <p><span>[</span><span>ʃ<span>n</span></span><span>]</span></p>
+                        </td>
+                        <td>
+                            <p><span>impression</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span>&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p><span>[</span><span>ʒ<span>n</span></span><span>]</span></p>
+                        </td>
+                        <td>
+                            <p><span>vision decision occasion</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span>-<span>sten</span></span></p>
+                        </td>
+                        <td>
+                            <p><span>[<span>sn</span>]</span></p>
+                        </td>
+                        <td>
+                            <p><span>listen christen</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span>-<span>stle</span></span></p>
+                        </td>
+                        <td>
+                            <p><span>[<span>sl</span>]</span></p>
+                        </td>
+                        <td>
+                            <p><span>whistle jostle castle</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span>-sure</span></p>
+                        </td>
+                        <td>
+                            <p><span>[</span><span>ʃə</span><span>]</span></p>
+                        </td>
+                        <td>
+                            <p><span>pressure</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span>&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p><span>[</span><span>ʒə</span><span>]</span></p>
+                        </td>
+                        <td>
+                            <p><span>pleasure measure</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span>-<span>ture</span></span></p>
+                        </td>
+                        <td>
+                            <p><span>[t</span><span>ʃə</span><span>]</span></p>
+                        </td>
+                        <td>
+                            <p><span>picture culture furniture</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span><span>ment</span></span></p>
+                        </td>
+                        <td>
+                            <p><span>[</span><span><span>mənt</span></span><span>]</span></p>
+                        </td>
+                        <td>
+                            <p><span>moment document development</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span><span>ch</span></span></p>
+                        </td>
+                        <td>
+                            <p><span>[t</span><span>ʃ</span><span>]</span></p>
+                        </td>
+                        <td>
+                            <p><span>much chick rich teacher</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span>&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p><span>[k]</span></p>
+                        </td>
+                        <td>
+                            <p><span>school headache chemistry</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span>&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p><span>[</span><span>ʃ</span><span>]</span></p>
+                        </td>
+                        <td>
+                            <p><span>machine Chicago</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span>-ck</span></p>
+                        </td>
+                        <td>
+                            <p><span>[k]</span></p>
+                        </td>
+                        <td>
+                            <p><span>cock pocket black knock</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span>-<span>dge</span></span></p>
+                        </td>
+                        <td>
+                            <p><span>[d</span><span>ʒ</span><span>]</span></p>
+                        </td>
+                        <td>
+                            <p><span>bridge fridge</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span><span>dr</span></span><span>-</span></p>
+                        </td>
+                        <td>
+                            <p><span>[<span>dr</span>]</span></p>
+                        </td>
+                        <td>
+                            <p><span>children driver drink</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span><span>gh</span></span></p>
+                        </td>
+                        <td>
+                            <p><span>[f]</span></p>
+                        </td>
+                        <td>
+                            <p><span>cough enough rough</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span>&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p><span>[-]</span></p>
+                        </td>
+                        <td>
+                            <p><span>light daughter high</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span><span>gu</span></span><span>-/-<span>gue</span></span></p>
+                        </td>
+                        <td>
+                            <p><span>[g]</span></p>
+                        </td>
+                        <td>
+                            <p><span>guess league dialogue guitar</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span>&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p><span>[<span>gw</span>]</span></p>
+                        </td>
+                        <td>
+                            <p><span>language penguin anguish</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span><span>kn</span></span><span>-</span></p>
+                        </td>
+                        <td>
+                            <p><span>[n]</span></p>
+                        </td>
+                        <td>
+                            <p><span>knife know knock</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span>-<span>mn</span></span></p>
+                        </td>
+                        <td>
+                            <p><span>[m]</span></p>
+                        </td>
+                        <td>
+                            <p><span>autumn column solemn</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span><span>ph</span></span></p>
+                        </td>
+                        <td>
+                            <p><span>[f]</span></p>
+                        </td>
+                        <td>
+                            <p><span>elephant photo telephone</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span><span>qu</span></span><span>-</span></p>
+                        </td>
+                        <td>
+                            <p><span>[kw]</span></p>
+                        </td>
+                        <td>
+                            <p><span>quality quite quick quiet quarter</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span><span>sh</span></span></p>
+                        </td>
+                        <td>
+                            <p><span>[</span><span>ʃ</span><span>]</span></p>
+                        </td>
+                        <td>
+                            <p><span>she <span>fish</span> shirt
+                                    wash</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span>-tch</span></p>
+                        </td>
+                        <td>
+                            <p><span>[t</span><span>ʃ</span><span>]</span></p>
+                        </td>
+                        <td>
+                            <p><span>watch catch match</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span><span>th</span></span></p>
+                        </td>
+                        <td>
+                            <p><span>[</span><span>θ</span><span>]</span></p>
+                        </td>
+                        <td>
+                            <p><span>thin thirty method</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span>&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p><span>[ð]</span></p>
+                        </td>
+                        <td>
+                            <p><span>the these with than clothe father weather</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span>tr-</span></p>
+                        </td>
+                        <td>
+                            <p><span>[tr]</span></p>
+                        </td>
+                        <td>
+                            <p><span>tree train country truck</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span><span>wh</span></span><span>-</span></p>
+                        </td>
+                        <td>
+                            <p><span>[w]</span></p>
+                        </td>
+                        <td>
+                            <p><span>what when white why</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span>&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p><span>[h]</span></p>
+                        </td>
+                        <td>
+                            <p><span>who <span>whose</span> whole</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span><span>wr</span></span><span>-</span></p>
+                        </td>
+                        <td>
+                            <p><span>[r]</span></p>
+                        </td>
+                        <td>
+                            <p><span>write wrong wrist</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span><span>ts</span></span></p>
+                        </td>
+                        <td>
+                            <p><span>[<span>ts</span>]</span></p>
+                        </td>
+                        <td>
+                            <p><span><span>cats</span></span><span> coats lets gets</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span>ds</span></p>
+                        </td>
+                        <td>
+                            <p><span>[<span>dz</span>]</span></p>
+                        </td>
+                        <td>
+                            <p><span>beds hands <span>needs</span>
+                                    lends</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span><span>ary</span></span></p>
+                        </td>
+                        <td>
+                            <p><span>[<span>er</span></span><span>ɪ</span><span>]</span></p>
+                        </td>
+                        <td>
+                            <p><span>dictionary library</span></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="audios"></div>
+    </div>
+    <script>
+        var wordpron = {
+            name: `n<i>eɪ</i>m`,  plane: `pl<i>eɪ</i>n`, Jane: `dʒ<i>eɪ</i>n`,baby: 'b<i>eɪ</i>bi',cake: 'k<i>eɪ</i>k',
+            bag: 'b<i>æ</i>ɡ',dad: 'd<i>æ</i>d',hat: 'h<i>æ</i>t',map: 'm<i>æ</i>p',black: 'bl<i>æ</i>k',back: 'b<i>æ</i>k',
+            after: 'ˈ<i>ɑː</i>ftə(r)',plant: 'pl<i>ɑː</i>nt',ask: '<i>ɑː</i>sk',grasp: 'ɡr<i>ɑː</i>sp',glass: 'ɡl<i>ɑː</i>s',fast: 'f<i>ɑː</i>st',
+            water:'ˈw<i>ɔː</i>tə(r)',
+            want:'w<i>ɒ</i>nt',what:'w<i>ɒ</i>t',watch:'w<i>ɒ</i>tʃ',wash:'w<i>ɒ</i>ʃ',quality:'ˈkw<i>ɒ</i>ləti',
+            any:'ˈ<i>e</i>ni',many:'ˈm<i>e</i>ni',
+            orange:'ˈɒr<i>ɪ</i>ndʒ',village:'ˈvɪl<i>ɪ</i>dʒ',cabbage:'ˈkæb<i>ɪ</i>dʒ',
+            China:'ˈtʃaɪn<i>ə</i>', another:'<i>ə</i>ˈnʌðə(r)', woman:'ˈwʊm<i>ə</i>n', breakfast:'ˈbrekf<i>ə</i>st',
+            bike:'<i>b</i>aɪk',bus:'<i>b</i>ʌs',bag_b:'<i>b</i>æɡ',
+            bomb:'bɒm',tomb:'tuːm',lamb:'læm',climb:'klaɪm',
+            cake_c:'<i>k</i>eɪk', picture:'ˈpɪ<i>k</i>tʃə(r)', coat:'<i>k</i>əʊt', music:'ˈmjuːzɪ<i>k</i>',
+            face:'feɪ<i>s</i>', decide:'dɪˈ<i>s</i>aɪd', cinema:'ˈ<i>s</i>ɪnəmə',
+            delicious:'dɪˈlɪ<i>ʃ</i>əs',
+            doctor:'ˈ<i>d</i>ɒktə(r)', bread:'bre<i>d</i>', hard:'hɑː<i>d</i>', day:'<i>d</i>eɪ',
+            grandpa:'ˈɡrænpɑː', grandma:'ˈɡrænmɑː', sandwich:'ˈsænwɪtʃ', handsome:'ˈhænsəm',
+            he:'h<i>iː</i>', these:'ð<i>iː</i>z', chinese:'ˌtʃaɪˈn<i>iː</i>z',
+            bed:'b<i>e</i>d', let:'l<i>e</i>t', pen:'p<i>e</i>n', desk:'d<i>e</i>sk', yes:'j<i>e</i>s', egg:'<i>e</i>g',
+            chicken:'ˈtʃɪk<i>ɪ</i>n', begin:'b<i>ɪ</i>ˈɡɪn', children:'ˈtʃɪldr<i>ə</i>n',
+            hundred:'ˈhʌndr<i>ə</i>d', open:'ˈəʊp<i>ə</i>n', 
+            five:'<i>f</i>aɪv', breakfast_f:'ˈbrek<i>f</i>əst', 
+            bag_g:'bæ<i>ɡ</i>', garden:'ˈ<i>ɡ</i>ɑːdn', go:'<i>ɡ</i>əʊ',
+            orange_g:'ˈɒrɪn<i>dʒ</i>', German:'ˈ<i>dʒ</i>ɜːmən',
+            hot:'<i>h</i>ɒt', head:'<i>h</i>ed', house:'<i>h</i>aʊs', hand:'<i>h</i>ænd',
+            hour:'ˈaʊə(r)', honor:'ˈɒnə',
+            bike_i:'b<i>aɪ</i>k', rice:'r<i>aɪ</i>s', kite:'k<i>aɪ</i>t', nice:'n<i>aɪ</i>s', 
+            fish:'f<i>ɪ</i>ʃ', big:'b<i>ɪ</i>ɡ', drink:'dr<i>ɪ</i>ŋk', sit:'s<i>ɪ</i>t', milk:'m<i>ɪ</i>lk', swim:'sw<i>ɪ</i>m', 
+            holiday:'ˈhɒl<i>ə</i>deɪ', family:'ˈfæm<i>ə</i>li', 
+            jeep:'<i>dʒ</i>iːp', jar:'<i>dʒ</i>ɑː(r)', joke:'<i>dʒ</i>əʊk', join:'<i>dʒ</i>ɔɪn', July:'<i>dʒ</i>uˈlaɪ', 
+            kind:'<i>k</i>aɪnd', skate:'s<i>k</i>eɪt', make:'meɪ<i>k</i>', week:'wiː<i>k</i>', 
+            like:'<i>l</i>aɪk', lake:'<i>l</i>eɪk', long:'<i>l</i>ɒŋ', lose:'<i>l</i>uːz', 
+            milk_l:'mɪ<i>l</i>k', school:'skuː<i>l</i>', tall:'tɔː<i>l</i>', 
+            monkey:'ˈ<i>m</i>ʌŋki', tomato:'təˈ<i>m</i>ɑːtəʊ', 
+            not:'<i>n</i>ɒt', note:'<i>n</i>əʊt', name_n:'<i>n</i>eɪm', no:'<i>n</i>əʊ', 
+            shine:'ʃaɪ<i>n</i>', ten:'te<i>n</i>', son:'sʌ<i>n</i>', moon:'muː<i>n</i>', 
+            uncle:'ˈʌ<i>ŋ</i>kl', thank:'θæ<i>ŋ</i>k', hungry:'ˈhʌ<i>ŋ</i>ɡri', 
+            those:'ð<i>əʊ</i>z', close:'kl<i>əʊ</i>z', go_o:'ɡ<i>əʊ</i>', home:'h<i>əʊ</i>m', no_o:'n<i>əʊ</i>', 
+            clock:'kl<i>ɒ</i>k', not_o:'n<i>ɒ</i>t', box:'b<i>ɒ</i>ks', shop:'ʃ<i>ɒ</i>p', sock:'s<i>ɒ</i>k', 
+            come:'k<i>ʌ</i>m', money:'ˈm<i>ʌ</i>ni', love:'l<i>ʌ</i>v', mother:'ˈm<i>ʌ</i>ðə', 
+            second:'ˈsek<i>ə</i>nd', tonight:'t<i>ə</i>ˈnaɪt', somebody:'ˈsʌmb<i>ə</i>di', welcome:'ˈwelk<i>ə</i>m', 
+            paper:'ˈ<i>p</i>eɪ<i>p</i>ə(r)', plane_p:'<i>p</i>leɪn', pig:'<i>p</i>ɪɡ', ship:'ʃɪ<i>p</i>', pen_p:'<i>p</i>en', 
+            quick:'<i>k</i>wɪk', quite:'<i>k</i>waɪt', quarter:'ˈ<i>k</i>wɔːtə(r)', quality_q:'ˈ<i>k</i>wɒləti', 
+            red:'<i>r</i>ed', rubber:'ˈ<i>r</i>ʌbə(r)', ruler:'ˈ<i>r</i>uːlə(r)', 
+            sit_s:'<i>s</i>ɪt', sleep:'<i>s</i>liːp',desk_s:'de<i>s</i>k',
+            music_s:'ˈmjuː<i>z</i>ɪk', husband:'ˈhʌ<i>z</i>bənd', rose:'rəʊ<i>z</i>', lose_s:'luː<i><i>z</i></i>', 
+            sure:'<i>ʃ</i>ʊə(r)',
+            usually:'ˈjuː<i>ʒ</i>uəli', pleasure:'ˈple<i>ʒ</i>ə(r)', 
+            ten_t:'<i>t</i>en',late:'leɪ<i>t</i>',meet:'miː<i>t</i>',
+            patient:'ˈpeɪ<i>ʃ</i>nt',nation:'ˈneɪ<i>ʃ</i>n',
+            question:'ˈkwes<i>tʃ</i>ən',
+            student:'ˈst<i>juː</i>dnt',excuse:'ɪkˈsk<i>juː</i>s',duty:'ˈd<i>juː</i>ti',Tuesday:'ˈt<i>juː</i>zdeɪ',
+            blue:'bl<i>uː</i>',ruler_u:'ˈr<i>uː</i>lə(r)',June:'dʒ<i>uː</i>n',influence:'ˈɪnfl<i>u</i>əns',
+            bus_u:'b<i>ʌ</i>s',cup:'k<i>ʌ</i>p',jump:'dʒ<i>ʌ</i>mp',much:'m<i>ʌ</i>tʃ',lunch:'l<i>ʌ</i>ntʃ',
+            busy:'ˈb<i>ɪ</i>zi',
+            autumn:'ˈɔːt<i>ə</i>m',difficult:'ˈdɪfɪk<i>ə</i>lt',
+            very:'ˈ<i>v</i>eri',voice:'<i>v</i>ɔɪs',love_v:'lʌ<i>v</i>',leave:'liː<i>v</i>',
+            week_w:'<i>w</i>iːk',win:'<i>w</i>ɪn',wake:'<i>w</i>eɪk',sweet:'s<i>w</i>iːt',wait:'<i>w</i>eɪt',
+            box_x:'bɒ<i>ks</i>',text:'te<i>ks</i>t',exercise:'ˈe<i>ks</i>əsaɪz',
+            example:'ɪ<i>ɡ</i>ˈ<i>z</i>ɑːmpl',exist:'ɪ<i>ɡ</i>ˈ<i>z</i>ɪst',exact:'ɪ<i>ɡ</i>ˈ<i>z</i>ækt',
+            my:'m<i>aɪ</i>', fly:'fl<i>aɪ</i>', try:'tr<i>aɪ</i>', cry:'kr<i>aɪ</i>', 
+            city:'ˈsɪt<i>i</i>', family_y:'fæməl<i>i</i>', slowly:'ˈsləʊl<i>i</i>', pretty:'ˈprɪt<i>i</i>', pity:'ˈpɪt<i>i</i>', 
+            yes_y:'<i>j</i>es', yard:'<i>j</i>ɑːd', yellow:'ˈ<i>j</i>eləʊ', young:'<i>j</i>ʌŋ', 
+            puzzle:'ˈpʌ<i>z</i>l',zero:'ˈ<i>z</i>ɪərəʊ',zoo:'<i>z</i>uː'
+        }
+        var unboundForEach = Array.prototype.forEach,
+            forEach = Function.prototype.call.bind(unboundForEach);
+        // typename:pron,word; spanprop:data-audio or ''
+        function bindMusic(typename, selector, tooltip) {
+            //音标发音            
+            var targets = document.querySelectorAll(`.${typename} ${selector}`)
+            let audioContainer = document.querySelector('#audios')
+            let isAppendingAudio = false
+
+            forEach(targets, el => {
+                el.addEventListener('click', function (e) {
+                    var ele = e.target
+                    let audioname = ele.dataset.audio || ele.outerHTML.replace(/<[^>]+>/g, '')
+                    if (audioname === '') return false
+                    let audio = audioContainer.querySelector(`audio#${typename}_${audioname}`)
+                    if (!audio) {
+                        if (isAppendingAudio) return
+                        isAppendingAudio = true
+                        audio = document.createElement("AUDIO")
+                        audio.id = `${typename}_${audioname}`
+                        audio.src = `${typename}/${audioname}.mp3`
+                        audio.type = "audio/mpeg"
+                        audioContainer.appendChild(audio)
+                        isAppendingAudio = false
+                    }
+                    audio.play()
+
+                    if (!!tooltip) {
+                        if (typename === 'word'){
+                            let audiotipname = audioname
+                            if(ele.dataset.region){
+                                audiotipname += '_' + ele.dataset.region
+                            }
+                            Toast(`<span>[</span> ${wordpron[audiotipname]} <span>]</span>`, 3000)
+                        }                            
+                    }
+                })
+            })
+        }
+
+        //提示信息 封装
+        function Toast(msg, duration) {
+            //隐藏之前的toast
+            let existsToast = document.body.querySelectorAll('.tooltip-word')
+            if (existsToast && existsToast.length>0) {
+                existsToast[existsToast.length-1].style.display = 'none'
+            }
+
+            duration = isNaN(duration) ? 3000 : duration;
+            var m = document.createElement('div');
+            m.className = 'tooltip-word'
+            m.innerHTML = `<p>${msg}</p>`;
+            document.body.appendChild(m);
+
+            var timer;
+            const removeToast = function () {
+                var d = 0.5;
+                m.style.opacity = '0';
+                setTimeout(function () { document.body.removeChild(m) }, d * 1000);
+            }
+            timer = setTimeout(removeToast, duration);
+
+            m.onmouseenter = c => {
+                clearTimeout(timer)
+            }
+            m.onmouseleave = c => {
+                timer = setTimeout(removeToast, duration);
+            }
+        }
+
+        window.onload = function () {
+
+            bindMusic('pron', 'span[data-audio]')
+            bindMusic('word', 'span', true)
+            // var tfrow = document.getElementById('tfhover').rows.length;
+
+            // var tbRow=[];
+            // for (var i=1;i<tfrow;i++) {
+            //     tbRow[i]=document.getElementById('tfhover').rows[i];
+            //     tbRow[i].onmouseover = function(){
+            //         this.style.backgroundColor = '#ffffff';
+            //     };
+            //     tbRow[i].onmouseout = function() {
+            //         this.style.backgroundColor = '#d4e3e5';
+            //     };
+            // }
+        };
+    </script>
+</body>
+
+</html>
